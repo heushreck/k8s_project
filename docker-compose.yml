@@ -1,0 +1,22 @@
+version: "3.0"
+
+services:
+  app:
+    build: ./app/
+    networks:
+      - my_conn
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - 1234:1234
+
+  db:
+    build: ./db/
+    networks:
+      - my_conn
+    restart: always
+
+networks:
+  my_conn:
+    driver: bridge
