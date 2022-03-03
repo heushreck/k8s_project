@@ -5,8 +5,8 @@ Basic Python Flask app in Docker which accesses a postgresql database in an othe
 ### Build & Run application
 Build the Docker image manually by cloning the Git repo.
 ```
-$ git clone <link>
-$ cd <foldername>
+$ git clone git@github.com:heushreck/postgres_flask_docker_project.git
+$ cd postgres_flask_docker_project
 $ docker-compose up
 ```
 ### Verify the running app
